@@ -4,10 +4,16 @@
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
     <link rel="stylesheet" href="/assets/css/styles.css">
-    {% seo %}
+    <link href='https://fonts.googleapis.com/css?family=Diplomata' rel='stylesheet'>
 </head>
 <body>
-{% include navigation.html %}
-{{ content }}
+    <div class="parallax"></div>
+    <div style="height:1000px;background-color:#F2F3EE;">
+        <div class="header">
+            <h1>Em & Andy's Favorite Recipes</h1>
+        </div>
+        {% include navigation.html %}
+        {{ content }}
+    </div>
 </body>
 </html>

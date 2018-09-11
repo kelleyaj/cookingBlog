@@ -2,20 +2,59 @@
 ---
 @import "main";
 
-.posts{
+.content{
+  background-color:#F2F3EE
+}
 
+.nav{
+  border:1px solid #ccc;
+  border-width:1px 0;
+  list-style:none;
+  margin:0;
+  padding:0;
+  text-align:center;
+}
+
+.nav li{
+  display:inline;
+}
+
+.nav a{
+  display:inline-block;
+  padding:10px;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("/assets/images/back.jpg");
+
+  /* Set a specific height */
+  min-height: 300px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header h1 {
+  margin-top: 0;
+  position: relative;
+  text-align: center;
+  font-family: 'Diplomata';
+}
+
+.posts{
   img:hover {
     box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
   }
-
   div.polaroid {
     width: 20%;
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
-
   img {width: 100%}
-
   div.container {
     text-align: center;
     padding: 2px 5px;
